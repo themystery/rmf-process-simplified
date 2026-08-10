@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Risk Management Framework — Field Reference</title>
+  <meta name="description" content="An interactive reference for the NIST RMF seven-step lifecycle, with a clickable cycle diagram and per-step task/role/output breakdowns." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <h1 class="display">Risk Management Framework</h1>
+      <div class="doc-meta">
+        <span>SOURCE: <b>NIST SP 800-37 REV. 2</b></span>
+        <span>SCOPE: <b>FEDERAL INFORMATION SYSTEMS</b></span>
+        <span>STRUCTURE: <b>7-STEP LIFECYCLE, CONTINUOUS</b></span>
+      </div>
+    </div>
+    <p class="subtitle">A field reference for how the RMF moves an information system from initial risk framing through authorization and into continuous monitoring — and back again.</p>
+  </header>
+
+  <p class="intro">The RMF is the process the U.S. federal government — and most contractors who touch federal systems — uses to integrate security, privacy, and supply-chain risk management into the system development lifecycle. It replaced the older Certification &amp; Accreditation model with something closer to a living cycle: seven steps that run in order once, then loop indefinitely as the system, its threats, and its environment change.</p>
+  <p class="intro">The diagram below is that loop. Select a step to see its purpose; scroll down for the full task, role, and output breakdown NIST assigns to each one.</p>
+
+  <section class="cycle-section">
+    <svg class="cycle-diagram" id="cycleSvg" viewBox="0 0 400 400" role="img" aria-label="RMF seven-step cycle diagram"></svg>
+    <div class="cycle-readout">
+      <div class="eyebrow" id="readoutEyebrow">STEP 1 OF 7</div>
+      <h3 class="readout-name" id="readoutName">Prepare</h3>
+      <p class="readout-purpose" id="readoutPurpose">Get the organization and the system ready to manage security and privacy risk before any control work begins.</p>
+      <p class="readout-hint">Click a wedge, or use the step list below — the loop runs Prepare → Monitor, then folds back into Prepare.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="steps-heading">
+      <h2 class="display">The seven steps</h2>
+      <span class="eyebrow">IN EXECUTION ORDER</span>
+    </div>
+    <div id="stepsList"></div>
+  </section>
+
+  <footer>
+    <span>Educational reference, independently written from NIST SP 800-37 Rev. 2 and SP 800-53 Rev. 5 — not an official government publication.</span>
+    <span class="mono">RMF-REF · REV.A</span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
